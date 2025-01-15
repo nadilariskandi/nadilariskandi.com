@@ -1,0 +1,445 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Uploading and Searching Book, Journal, Article, Thesis, Dissertation (by Nadila Riskandi)
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-pink-100">
+  <header class="bg-pink-800 text-white p-4">
+   <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-black">
+     Uploading and Searching Book, Journal, Article, Thesis, Dissertation (by Nadila Riskandi)
+    </h1>
+    <nav>
+     <ul class="flex space-x-4">
+      <li>
+       <a class="hover:underline" href="#">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Upload
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Search
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        About
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <main class="container mx-auto p-4">
+   <section class="mb-8">
+    <h2 class="text-xl font-bold mb-4">
+     Upload Your Work
+    </h2>
+    <form class="bg-white p-4 rounded shadow">
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="title">
+       Title
+      </label>
+      <input class="w-full p-2 border rounded" id="title" name="title" placeholder="Enter title" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="author">
+       Author
+      </label>
+      <input class="w-full p-2 border rounded" id="author" name="author" placeholder="Enter author" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="category">
+       Category
+      </label>
+      <select class="w-full p-2 border rounded" id="category" name="category">
+       <option>
+        Journal
+       </option>
+       <option>
+        Book
+       </option>
+       <option>
+        Poetry
+       </option>
+       <option>
+        Article
+       </option>
+      </select>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="file">
+       Upload File
+      </label>
+      <input class="w-full p-2 border rounded" id="file" name="file" type="file"/>
+     </div>
+     <button class="bg-pink-800 text-white p-2 rounded" type="submit">
+      Upload
+     </button>
+    </form>
+   </section>
+   <section class="mb-8">
+    <h2 class="text-xl font-bold mb-4">
+     Edit Your Document
+    </h2>
+    <form class="bg-white p-4 rounded shadow">
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="font">
+       Font
+      </label>
+      <select class="w-full p-2 border rounded" id="font" name="font">
+       <option>
+        Arial
+       </option>
+       <option>
+        Times New Roman
+       </option>
+       <option>
+        Courier New
+       </option>
+       <option>
+        Georgia
+       </option>
+      </select>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="size">
+       Size
+      </label>
+      <input class="w-full p-2 border rounded" id="size" name="size" placeholder="Enter font size" type="number"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="color">
+       Color
+      </label>
+      <input class="w-full p-2 border rounded" id="color" name="color" placeholder="Enter font color" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="type">
+       Type
+      </label>
+      <select class="w-full p-2 border rounded" id="type" name="type">
+       <option>
+        Bold
+       </option>
+       <option>
+        Italic
+       </option>
+       <option>
+        Underline
+       </option>
+      </select>
+     </div>
+     <button class="bg-pink-800 text-white p-2 rounded" type="submit">
+      Apply Changes
+     </button>
+    </form>
+   </section>
+   <section class="mb-8">
+    <h2 class="text-xl font-bold mb-4">
+     Plagiarism Checker
+    </h2>
+    <form action="http://www.duplichecker.com" class="bg-white p-4 rounded shadow" method="GET" target="_blank">
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="plagiarism-file">
+       Upload File for Plagiarism Check
+      </label>
+      <input class="w-full p-2 border rounded" id="plagiarism-file" name="plagiarism-file" type="file"/>
+     </div>
+     <button class="bg-pink-800 text-white p-2 rounded" type="submit">
+      Check Plagiarism
+     </button>
+    </form>
+   </section>
+   <section class="mb-8">
+    <h2 class="text-xl font-bold mb-4">
+     Paraphrase and Translate
+    </h2>
+    <form action="http://www.pharapraser.io" class="bg-white p-4 rounded shadow" method="GET" target="_blank">
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="paraphrase-text">
+       Enter Text to Paraphrase
+      </label>
+      <textarea class="w-full p-2 border rounded" id="paraphrase-text" name="paraphrase-text" placeholder="Enter text to paraphrase" rows="4"></textarea>
+     </div>
+     <button class="bg-pink-800 text-white p-2 rounded mb-4" type="submit">
+      Paraphrase
+     </button>
+    </form>
+    <form action="https://translate.google.com/" class="bg-white p-4 rounded shadow" method="GET" target="_blank">
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="translate-text">
+       Enter Text to Translate
+      </label>
+      <textarea class="w-full p-2 border rounded" id="translate-text" name="text" placeholder="Enter text to translate" rows="4"></textarea>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="language">
+       Select Language
+      </label>
+      <select class="w-full p-2 border rounded" id="language" name="tl">
+       <option value="en">
+        English
+       </option>
+       <option value="es">
+        Spanish
+       </option>
+       <option value="fr">
+        French
+       </option>
+       <option value="de">
+        German
+       </option>
+       <option value="zh">
+        Chinese
+       </option>
+       <option value="ja">
+        Japanese
+       </option>
+       <option value="ko">
+        Korean
+       </option>
+       <option value="ru">
+        Russian
+       </option>
+       <option value="ar">
+        Arabic
+       </option>
+       <option value="pt">
+        Portuguese
+       </option>
+       <option value="it">
+        Italian
+       </option>
+       <option value="hi">
+        Hindi
+       </option>
+       <option value="bn">
+        Bengali
+       </option>
+       <option value="pa">
+        Punjabi
+       </option>
+       <option value="jv">
+        Javanese
+       </option>
+       <option value="ms">
+        Malay
+       </option>
+       <option value="vi">
+        Vietnamese
+       </option>
+       <option value="th">
+        Thai
+       </option>
+       <option value="tr">
+        Turkish
+       </option>
+       <option value="fa">
+        Persian
+       </option>
+       <option value="ur">
+        Urdu
+       </option>
+      </select>
+     </div>
+     <button class="bg-pink-800 text-white p-2 rounded mb-4" type="submit">
+      Translate
+     </button>
+     <button class="bg-pink-800 text-white p-2 rounded" type="submit">
+      Process Translation
+     </button>
+    </form>
+   </section>
+   <section class="mb-8">
+    <h2 class="text-xl font-bold mb-4">
+     AI Document Generator
+    </h2>
+    <form action="http://www.saasfirst.com" class="bg-white p-4 rounded shadow" method="GET" target="_blank">
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="document-topic">
+       Enter Topic for Document
+      </label>
+      <input class="w-full p-2 border rounded" id="document-topic" name="q" placeholder="Enter topic" type="text"/>
+     </div>
+     <button class="bg-pink-800 text-white p-2 rounded" type="submit">
+      Generate Document
+     </button>
+    </form>
+   </section>
+   <section class="mb-8">
+    <h2 class="text-xl font-bold mb-4">
+     Typing Correction
+    </h2>
+    <form class="bg-white p-4 rounded shadow">
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="typing-text">
+       Enter Text for Typing Correction
+      </label>
+      <textarea class="w-full p-2 border rounded" id="typing-text" name="typing-text" placeholder="Enter text for correction" rows="4"></textarea>
+     </div>
+     <button class="bg-pink-800 text-white p-2 rounded mb-4" type="submit">
+      Correct Typing
+     </button>
+     <button class="bg-pink-800 text-white p-2 rounded" type="submit">
+      Process Typing Correction
+     </button>
+    </form>
+   </section>
+   <section>
+    <h2 class="text-xl font-bold mb-4">
+     Search Works
+    </h2>
+    <form action="https://scholar.google.com/scholar" class="bg-white p-4 rounded shadow mb-8" method="GET">
+     <div class="mb-4">
+      <label class="block text-gray-700 mb-2" for="search">
+       Search
+      </label>
+      <input class="w-full p-2 border rounded" id="search" name="q" placeholder="Search by title, author, or category" required="" type="text"/>
+     </div>
+     <button class="bg-pink-800 text-white p-2 rounded" type="submit">
+      Search
+     </button>
+    </form>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+     <article class="bg-white p-4 rounded shadow">
+      <img alt="A detailed description of the work image 1" class="w-full h-48 object-cover rounded mb-4" src="https://placehold.co/600x400"/>
+      <h3 class="text-lg font-bold mb-2">
+       Title of Work 1
+      </h3>
+      <p class="text-gray-700 mb-2">
+       Author: Author 1
+      </p>
+      <p class="text-gray-700 mb-2">
+       Category: Journal
+      </p>
+      <a class="text-pink-800 hover:underline" href="https://scholar.google.com/scholar?q=Title+of+Work+1+Author+1+Journal" target="_blank">
+       Read More
+      </a>
+     </article>
+     <article class="bg-white p-4 rounded shadow">
+      <img alt="A detailed description of the work image 2" class="w-full h-48 object-cover rounded mb-4" src="https://placehold.co/600x400"/>
+      <h3 class="text-lg font-bold mb-2">
+       Title of Work 2
+      </h3>
+      <p class="text-gray-700 mb-2">
+       Author: Author 2
+      </p>
+      <p class="text-gray-700 mb-2">
+       Category: Book
+      </p>
+      <a class="text-pink-800 hover:underline" href="https://scholar.google.com/scholar?q=Title+of+Work+2+Author+2+Book" target="_blank">
+       Read More
+      </a>
+     </article>
+     <article class="bg-white p-4 rounded shadow">
+      <img alt="A detailed description of the work image 3" class="w-full h-48 object-cover rounded mb-4" src="https://placehold.co/600x400"/>
+      <h3 class="text-lg font-bold mb-2">
+       Title of Work 3
+      </h3>
+      <p class="text-gray-700 mb-2">
+       Author: Author 3
+      </p>
+      <p class="text-gray-700 mb-2">
+       Category: Poetry
+      </p>
+      <a class="text-pink-800 hover:underline" href="https://scholar.google.com/scholar?q=Title+of+Work+3+Author+3+Poetry" target="_blank">
+       Read More
+      </a>
+     </article>
+     <article class="bg-white p-4 rounded shadow">
+      <img alt="A detailed description of the work image 4" class="w-full h-48 object-cover rounded mb-4" src="https://placehold.co/600x400"/>
+      <h3 class="text-lg font-bold mb-2">
+       Title of Work 4
+      </h3>
+      <p class="text-gray-700 mb-2">
+       Author: Author 4
+      </p>
+      <p class="text-gray-700 mb-2">
+       Category: Article
+      </p>
+      <a class="text-pink-800 hover:underline" href="https://scholar.google.com/scholar?q=Title+of+Work+4+Author+4+Article" target="_blank">
+       Read More
+      </a>
+     </article>
+     <article class="bg-white p-4 rounded shadow">
+      <img alt="A detailed description of the work image 5" class="w-full h-48 object-cover rounded mb-4" src="https://placehold.co/600x400"/>
+      <h3 class="text-lg font-bold mb-2">
+       Title of Work 5
+      </h3>
+      <p class="text-gray-700 mb-2">
+       Author: Author 5
+      </p>
+      <p class="text-gray-700 mb-2">
+       Category: Journal
+      </p>
+      <a class="text-pink-800 hover:underline" href="https://scholar.google.com/scholar?q=Title+of+Work+5+Author+5+Journal" target="_blank">
+       Read More
+      </a>
+     </article>
+     <article class="bg-white p-4 rounded shadow">
+      <img alt="A detailed description of the work image 6" class="w-full h-48 object-cover rounded mb-4" src="https://placehold.co/600x400"/>
+      <h3 class="text-lg font-bold mb-2">
+       Title of Work 6
+      </h3>
+      <p class="text-gray-700 mb-2">
+       Author: Author 6
+      </p>
+      <p class="text-gray-700 mb-2">
+       Category: Book
+      </p>
+      <a class="text-pink-800 hover:underline" href="https://scholar.google.com/scholar?q=Title+of+Work+6+Author+6+Book" target="_blank">
+       Read More
+      </a>
+     </article>
+     <article class="bg-white p-4 rounded shadow">
+      <img alt="A detailed description of the work image 7" class="w-full h-48 object-cover rounded mb-4" src="https://placehold.co/600x400"/>
+      <h3 class="text-lg font-bold mb-2">
+       Title of Work 7
+      </h3>
+      <p class="text-gray-700 mb-2">
+       Author: Author 7
+      </p>
+      <p class="text-gray-700 mb-2">
+       Category: Poetry
+      </p>
+      <a class="text-pink-800 hover:underline" href="https://scholar.google.com/scholar?q=Title+of+Work+7+Author+7+Poetry" target="_blank">
+       Read More
+      </a>
+     </article>
+     <article class="bg-white p-4 rounded shadow">
+      <img alt="A detailed description of the work image 8" class="w-full h-48 object-cover rounded mb-4" src="https://placehold.co/600x400"/>
+      <h3 class="text-lg font-bold mb-2">
+       Title of Work 8
+      </h3>
+      <p class="text-gray-700 mb-2">
+       Author: Author 8
+      </p>
+     </article>
+    </div>
+   </section>
+  </main>
+ </body>
+</html>
